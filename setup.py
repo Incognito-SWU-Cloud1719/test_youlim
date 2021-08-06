@@ -21,12 +21,7 @@ f = open("vsftpd.conf", 'w')
 f.close()
 
 lines = ['listen=NO\n','listen_ipv6=YES\n','anonymous_enable=NO\n',
-         'local_enable=YES\n', 'dirmessage_enable=YES\n','use_localtime=YES\n',
-         'xferlog_enable=YES\n', 'connect_from_port_20=YES\n',
-         'secure_chroot_dir=/var/run/vsftpd/empty\n', 'pam_service_name=vsftpd\n',
-         'rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem\n',
-         'rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key\n',
-         'ssl_enable=NO\n']
+         'local_enable=YES\n']
 
 with open("vsftpd.conf", 'w') as file:
     file.writelines(lines)
