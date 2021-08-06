@@ -1,5 +1,7 @@
 # Files in top-level directory:
 include *.*
 # inclouding vsftpd.txt files
-include vsftpd.txt
+#include vsftpd.txt
+#recursive-include data *
+include vsftpd.conf
 recursive-include data *
