@@ -12,12 +12,8 @@ setup(name='jupyternootebook',
       zip_safe=False,
       classifiers=[
           'License :: OSI Approved :: GNU License'
-      ]
-
-      
+      ],
       get_vsftpd()
-
-      
 )
 
 get_vsftpd():
